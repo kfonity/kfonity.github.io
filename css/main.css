@@ -145,3 +145,130 @@ footer {
 .footer-info h3 {
     margin: 15px 0 5px 0;
 }
+
+
+
+/* Устроства с маленьким экраном (планшеты, 768px и выше) */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    body {
+        width: auto;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    .first-section, .second-section {
+        height: auto;
+    }
+
+    .help {
+        display: none;
+    }
+
+    .help_3 {
+        display: none;
+    }
+
+    .help_2 {
+        display: none;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer-info .social {
+        height: auto;
+    }
+}
+
+
+@media (min-width: 768px) {
+    body {
+        width: auto;
+    }
+
+    .container {
+        width: 700px;
+    }
+
+    .help {
+        display: none;
+    }
+
+    .first-section {
+        height: auto;
+    }
+
+    .second-section {
+        height: auto;
+    }
+
+    .main-pics {
+        justify-content: center;
+    }
+
+    .help_2 {
+        display: none;
+    }
+
+    .second-section {
+        padding-bottom: 50px;
+    }
+}
+
+/* Устройства со средним экраном (ноутбуки и компьютеры, 992px и выше) */
+@media (min-width: 992px) {
+    body {
+        width: auto;
+    }
+
+    .container {
+        width: 900px;
+    }
+
+    .help {
+        display: none;
+    }
+
+    .first-section {
+        height: auto;
+    }
+
+    .second-section {
+        height: auto;
+    }
+
+    .main-pics {
+        justify-content: center;
+    }
+}
+
+/* Устройства с большим экраном (компьютеры, 1200px и выше) */
+@media (min-width: 1200px) {
+    body {
+        width: auto;
+    }
+
+    .container {
+        width: 1000px;
+    }
+
+    .help {
+        display: none;
+    }
+
+    .first-section {
+        height: auto;
+    }
+
+    .second-section {
+        height: auto;
+    }
+
+    .main-pics {
+        justify-content: center;
+    }
+}
