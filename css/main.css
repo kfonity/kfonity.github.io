@@ -17,7 +17,7 @@ h1, h2 {
 }
 
 .s-t {
-    text-shadow: 3px 3px 2px #0000008f;
+    text-shadow: 3px 3px 2px #00000033;
 }
 
 .t-s_2 {
@@ -67,7 +67,7 @@ header {
 
 .first-section {
     height: 350px;
-    background: #ffffff1f;
+    background: #ffffff;
     box-shadow: 3px 4px 5px 0px #0000008c;
 }
 
@@ -79,6 +79,7 @@ header {
 
 .main-content {
     width: 600px;
+    color: #000;
 }
 
 .main-pics {
@@ -113,7 +114,7 @@ header {
 }
 
 .second {
-    padding-top: 25px;
+    padding: 25px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -128,10 +129,19 @@ header {
 
 
 
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+
 
 footer {
     height: 80px;
-    background: #ffffffa8;
+    background: #ffffff24;
 }
 
 .footer-info {
@@ -156,10 +166,11 @@ footer {
     height: 40px;
     width: 40px;
     border-radius: 50px;
+    box-shadow: 0 0 5px #ffffff94;
 }
 
 .footer-info .contacts {
-    color: #000;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,12 +197,28 @@ footer {
         width: 300px;
     }
 
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
     .main-content {
         width: auto;
     }
 
     .main {
         flex-direction: column;
+    }
+
+    .second {
+        flex-direction: column;
+    }
+
+    #block-for-slider2 {
+        width: auto;
     }
 
     .first-section, .second-section {
