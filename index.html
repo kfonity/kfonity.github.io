@@ -8,26 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/slider.css">
 
-    <!-- Add jQuery library -->
     <script src="js/jquery-3.4.1.js"></script>
-
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script src="fancybox/lib/jquery.mousewheel.pack.js"></script>
-
-    <!-- Add fancyBox -->
-    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-    <script src="fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-    <script src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css">
-    <script src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <script async src="js/main.js"></script>
 <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
+
+
+
 </head>
 <body>
 <!--<div class="bg"></div>-->
@@ -42,74 +30,133 @@
 <section class="first-section">
     <div class="container main">
         <div class="main-content">
-            <h1>Главный заголовок</h1>
-            <p>
+            <h1 class="s-t">Главный заголовок</h1>
+            <p class="s-t">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias doloremque minima? Aliquid amet atque consequatur id, ipsum laborum minima quaerat quidem similique voluptatem? A cum debitis harum nisi quo.
             </p>
-            <h2>Заголовок</h2>
-            <p>
+            <h2 class="s-t">Заголовок</h2>
+            <p class="s-t">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, consectetur culpa dolor enim esse hic illo laudantium nobis possimus ratione reiciendis tempora voluptas voluptates? Beatae consequatur dicta esse magnam veritatis?
             </p>
         </div>
-        <div class="main-pics">
-            <a class="fancybox" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+<!--        <div class="main-pics">
+            <a class="fancybox" rel="group" href="img/work/800/1.JPG">
+                <img src="img/work/800/1.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/800/2.JPG">
+                <img src="img/work/800/2.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox" rel="group" href="img/bg.jpg">
-                <img src="img/bg.jpg" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/800/3.JPG">
+                <img src="img/work/800/3.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/800/4.JPG">
+                <img src="img/work/800/4.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox" rel="group" href="img/bg2.jpg">
-                <img src="img/bg2.jpg" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/800/5.JPG">
+                <img src="img/work/800/5.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/800/6.JPG">
+                <img src="img/work/800/6.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+            <a class="fancybox help_3" rel="group" href="img/work/800/7.JPG">
+                <img src="img/work/800/7.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox help_3" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/800/8.JPG">
+                <img src="img/work/800/8.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox help_2" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/800/9.JPG">
+                <img src="img/work/800/9.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox help" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+            <a class="fancybox help_2" rel="group" href="img/work/800/9.JPG">
+                <img src="img/work/800/9.JPG" alt="" class="work-img">
             </a>
+        </div>-->
+        <div id="block-for-slider">
+            <div id="viewport">
+                <ul id="slidewrapper">
+                    <li class="slide"><img src="img/work/800/1.JPG" alt="1" class="slide-img"></li>
+                    <li class="slide"><img src="img/work/800/2.JPG" alt="2" class="slide-img"></li>
+                    <li class="slide"><img src="img/work/800/3.JPG" alt="3" class="slide-img"></li>
+                    <li class="slide"><img src="img/work/800/4.JPG" alt="4" class="slide-img"></li>
+                    <li class="slide"><img src="img/work/800/5.JPG" alt="5" class="slide-img"></li>
+                    <li class="slide"><img src="img/work/800/6.JPG" alt="6" class="slide-img"></li>
+                    <li class="slide"><img src="img/work/800/7.JPG" alt="7" class="slide-img"></li>
+                    <li class="slide"><img src="img/work/800/8.JPG" alt="8" class="slide-img"></li>
+                    <li class="slide"><img src="img/work/800/9.JPG" alt="9" class="slide-img"></li>
+                </ul>
+
+                <div id="prev-next-btns">
+                    <div id="prev-btn"></div>
+                    <div id="next-btn"></div>
+                </div>
+
+                <ul id="nav-btns">
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                    <li class="slide-nav-btn"></li>
+                </ul>
+            </div>
         </div>
+
+
+
+
+
+
+
+
+
     </div>
 </section>
 <section class="second-section">
     <div class="container second">
-        <div class="main-pics second-pics">
-            <a class="fancybox" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+        <div class="main-pics">
+            <a class="fancybox" rel="group" href="img/work/960/1.JPG">
+                <img src="img/work/960/1.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/960/2.JPG">
+                <img src="img/work/960/2.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox" rel="group" href="img/bg.jpg">
-                <img src="img/bg.jpg" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/960/3.JPG">
+                <img src="img/work/960/3.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox help_3" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/960/4.JPG">
+                <img src="img/work/960/4.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox help" rel="group" href="img/bg2.jpg">
-                <img src="img/bg2.jpg" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/960/5.JPG">
+                <img src="img/work/960/5.JPG" alt="" class="work-img">
             </a>
-            <a class="fancybox help" rel="group" href="img/icon.png">
-                <img src="img/icon.png" alt="" class="work-img">
+            <a class="fancybox" rel="group" href="img/work/960/6.JPG">
+                <img src="img/work/960/6.JPG" alt="" class="work-img">
+            </a>
+            <a class="fancybox" rel="group" href="img/work/960/7.JPG">
+                <img src="img/work/960/7.JPG" alt="" class="work-img">
+            </a>
+            <a class="fancybox" rel="group" href="img/work/960/8.JPG">
+                <img src="img/work/960/8.JPG" alt="" class="work-img">
+            </a>
+            <a class="fancybox" rel="group" href="img/work/960/9.JPG">
+                <img src="img/work/960/9.JPG" alt="" class="work-img">
+            </a>
+            <a class="fancybox" rel="group" href="img/work/960/10.JPG">
+                <img src="img/work/960/10.JPG" alt="" class="work-img">
+            </a>
+            <a class="fancybox" rel="group" href="img/work/960/11.JPG">
+                <img src="img/work/960/11.JPG" alt="" class="work-img">
             </a>
         </div>
-        <div class="main-content">
-            <p>
+        <div class="main-content_2">
+            <p class="s-t">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci aut eius expedita fuga inventore labore nam pariatur quidem suscipit? At aut earum illo natus neque quaerat repellendus rerum, saepe!
+            </p>
+            <p class="s-t">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dicta doloremque ducimus eaque eum id inventore laborum, nihil optio repudiandae, soluta vel! Consectetur esse itaque, libero nihil odit vel voluptatibus.
             </p>
         </div>
     </div>
@@ -118,29 +165,25 @@
     <div class="container footer-info">
         <div class="social">
             <a href="#">
-                <img src="img/icon.png" alt="">
+                <img src="img/telegram.png" alt="">
             </a>
             <a href="#">
-                <img src="img/icon.png" alt="">
-            </a>
-            <a href="#">
-                <img src="img/icon.png" alt="">
+                <img src="img/mail.png" alt="">
             </a>
         </div>
         <div class="contacts">
-            <h3>Контакты</h3>
-            <div class="cont-info">
-                телефон: 8-912-345-67-00;<br>
+            <h3 class="m0 t-s_2">Контакты</h3>
+            <div class="cont-info t-s_2">
                 телеграм: @qwerty;<br>
                 почта: zxc@gmail.com<br>
             </div>
         </div>
     </div>
 </footer>
-<script type="text/javascript">
+<!--<script type="text/javascript">
     $(document).ready(function() {
         $(".fancybox").fancybox();
     });
-</script>
+</script>-->
 </body>
 </html>
